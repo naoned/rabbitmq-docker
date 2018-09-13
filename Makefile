@@ -8,7 +8,7 @@ TAG?=latest
 #------------------------------------------------------------------------------
 
 build: ## Build the image
-	echo docker build --force-rm -t naoned/rabbitmq:$(TAG) .
+	docker build --force-rm -t naoned/rabbitmq:$(TAG) .
 
 #------------------------------------------------------------------------------
 
