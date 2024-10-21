@@ -1,4 +1,4 @@
-FROM rabbitmq:4.0.2-management
+FROM rabbitmq:4-management
 
 RUN apt-get update && \
          apt-get install -y curl && \
