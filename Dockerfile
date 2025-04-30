@@ -7,6 +7,7 @@ RUN apt-get update && \
 
 # healthcheck.sh from onyx/docker
 COPY healthcheck.sh /is-ready.sh
+COPY rabbitmq.conf /etc/rabbitmq/rabbitmq.conf
 
 HEALTHCHECK --interval=10s --timeout=10s --retries=10 \
   CMD /is-ready.sh
