@@ -2,7 +2,7 @@ version: '3'
 services:
 
     rabbitmq:
-        image: naoned/rabbitmq
+        image: mnesys/rabbitmq
         container_name: rabbitmq
         volumes:
             - ./system:/etc/rabbitmq/conf.d/
